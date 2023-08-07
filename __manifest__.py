@@ -6,7 +6,7 @@
         Developers management""",
 
     'author': "Olexiy Pustovgar",
-    'website': "https://github.com/olexiyodoo",
+    'website': "https://github.com/olexiyodoo/mg_develop",
 
     'category': 'Human Resources',
     'license': 'OPL-1',
