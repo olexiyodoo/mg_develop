@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mg_developer_view_form" model="ir.ui.view">
+        <field name="name">mg.developer.form</field>
+        <field name="model">mg.developer</field>
+        <field name="arch" type="xml">
+            <form >
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="phone" widget="Phone"/>
+                        <field name="email"/>
+                        <field name="address"/>
+                        <field name="birth_date" widget="Date"/>
+                        <field name="position_id"/>
+                        <field name="company_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="developer_view_tree" model="ir.ui.view">
+        <field name="name">mg.developer.tree</field>
+        <field name="model">mg.developer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="phone" widget="Phone"/>
+                <field name="email"/>
+                <field name="position_id"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_developer_tree_act_window" model="ir.actions.act_window">
+        <field name="name">View Developers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mg.developer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_mg_developer_form_act_window" model="ir.actions.act_window">
+        <field name="name">Add Developers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mg.developer</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="menu_developer_tree"
+              action="action_developer_tree_act_window"
+              name="View Developer"
+              parent="developer_main_menu"
+              sequence="150"/>
+
+    <menuitem id="menu_developer_form"
+              action="action_mg_developer_form_act_window"
+              name="Add Developer"
+              parent="developer_main_menu"
+              sequence="201"/>
+
+</odoo>

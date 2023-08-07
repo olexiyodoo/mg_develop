@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_mg_position__group_user,access_mg_position__group_user,model_mg_position,base.group_user,1,1,1,1
+access_mg_company__group_user,access_mg_company__group_user,model_mg_company,base.group_user,1,1,1,1
+access_mg_developer__group_user,access_mg_developer__group_user,model_mg_developer,base.group_user,1,0,1,0
+

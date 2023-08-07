@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<odoo >
+    <data noupdate="1">
+          <record forcecreate="True" id="mg_develop.data_analyst" model="mg.position">
+              <field name="name"> Data analyst </field>
+              <field name="job_duties"> Data analyst </field>
+          </record>
+
+           <record forcecreate="True" id="java_developer" model="mg.position">
+              <field name="name"> Java developer</field>
+              <field name="job_duties"> Java developer </field>
+          </record>
+
+         <record forcecreate="True" id="js_developer" model="mg.position">
+              <field name="name">JS developer</field>
+              <field name="job_duties">JavaScript developer</field>
+          </record>
+
+         <record forcecreate="True" id="odoo_junior" model="mg.position">
+              <field name="name">Odoo junior developer</field>
+              <field name="job_duties">Розробляє модулі для Odoo</field>
+          </record>
+    </data>
+</odoo>

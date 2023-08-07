@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="management_main_menu"
+              name="Developers management"
+              sequence="10"/>
+
+    <menuitem id="developer_main_menu"
+              name="Developer"
+              parent="management_main_menu"
+              sequence="100"/>
+
+     <menuitem id="company_main_menu"
+              name="Company"
+              parent="management_main_menu"
+              sequence="30"/>
+</odoo>
